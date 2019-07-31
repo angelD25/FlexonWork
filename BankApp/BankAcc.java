@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class BankAcc {
   private int accNumber=123;
-  private int balance=0;
+  private double balance=0;
   private String custName="Anjali";
   private String email="abc@def.com";
   private long contactNum=510;
@@ -18,7 +18,7 @@ public class BankAcc {
 	this.accNumber = accNumber;
   }
 
-  public int getBalance() {
+  public double getBalance() {
 	return balance;
   }
 
@@ -51,26 +51,15 @@ public class BankAcc {
   }
 
   
-  public void deposit() {
-	  Scanner scan2 = new Scanner(System.in);
-	  System.out.println("Enter the amount you want to deposit");
-	  int amount = scan2.nextInt();
-	  if(amount>50)
-	  {
-	  System.out.println("You cannot deposit more than 50");  
-	  }
-	  else {
+  public void deposit(double amount) {
 	  balance = balance + amount;
 	  System.out.println("The amount added is:" +amount);
 	  System.out.println("Your new balance is:" +balance);
-	  }
+	  
   }
   
-  public void withdraw() {
-	  Scanner scan = new Scanner(System.in);
-	  System.out.println("Enter the amount you want to withdraw");
-	  int amount = scan.nextInt();
-	  if(amount > balance) {
+  public void withdraw(double amount) {
+	  if(amount >= balance) {
 	  System.out.println("You have not enough balance to withdraw this much amount");
 	  }
 	  else {
