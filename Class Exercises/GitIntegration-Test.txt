@@ -1,0 +1,5 @@
+checking whether the github is integrated with jenkins or not .
+
+Push event should trigger and give notification to jenkin.
+
+Webhooks didn't work. Tring poll scm by connecting jenkins with github.
