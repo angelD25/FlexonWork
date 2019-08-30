@@ -1,0 +1,26 @@
+pipeline{
+	agent any
+	stages{
+		stage(‘compile stage’){
+			steps {
+			withMaven(maven : ’Apache_Maven ’){
+				sh ’mvn clean compile’
+			}
+		  }
+}
+stage(‘testing stage’){
+	steps{
+	withMaven(maven : ’Apache_Maven ’){
+				sh ’mvn test’
+			  }
+}
+}
+stage(‘deployment stage’){
+	steps{
+	withMaven(maven : ’Apache_Maven ’){
+				sh ’mvn deploy’
+			  }
+}
+}
+}
+}
