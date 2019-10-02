@@ -1,10 +1,12 @@
 package com.flexontech.project;
 
-import static org.junit.Assert.*;
+//import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class SubTest {
+import junit.framework.TestCase;
+
+public class SubTest extends TestCase {
 
 	@Test
 	public void test() {
