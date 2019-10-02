@@ -1,0 +1,9 @@
+Step 1 :get IAM Link for login - https://learn-aws-anjalitandel.signin.aws.amazon.com/console
+anjalitandel52@gmail.com
+captainD@25
+AKIAW5I63UFXTZQWQ257
+XIkzpTW4oIbxARYm42xWzz/NomBWP/kkwsUNCwIQ
+
+AKIAIT4R45WSW5NZV3JA
+6Qequ/ed5X19GWe6x3IpuVzdjN7UJAd7p9Lqtq6i
+Step 2: Activate MFA(Multifactor access) on your root account
